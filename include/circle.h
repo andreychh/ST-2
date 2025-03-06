@@ -1,6 +1,6 @@
 // Copyright 2025 Andrey Chernykh
-#ifndef CIRCLE_H
-#define CIRCLE_H
+#ifndef INCLUDE_CIRCLE_H_
+#define INCLUDE_CIRCLE_H_
 
 class Circle {
  public:
@@ -20,4 +20,4 @@ class Circle {
   double area{};
 };
 
-#endif  // CIRCLE_H
+#endif  // INCLUDE_CIRCLE_H_
