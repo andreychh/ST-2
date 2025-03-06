@@ -1,11 +1,15 @@
 set(header_path "${${PROJECT_NAME}_SOURCE_DIR}/include")
-set(header ${header_path}/circle.h)
-set(src circle.cpp)
+set(circle_header ${header_path}/circle.h)
+set(tasks_header ${header_path}/tasks.h)
+set(circle_src circle.cpp)
+set(tasks_src tasks.cpp)
 
 add_library(${PROJECT_NAME} SHARED
-  ${header}
-  ${src})
-  
+  ${circle_header}
+  ${circle_src}
+  ${tasks_header}
+  ${tasks_src})
+
 target_include_directories(${PROJECT_NAME}
   PUBLIC ${CMAKE_CURRENT_BINARY_DIR}
          ${${PROJECT_NAME}_SOURCE_DIR}/include)
